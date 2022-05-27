@@ -1,9 +1,9 @@
 <?php
 
-    define("DBUSER","MikasaAckerman");
-    define("DBHOST","localhost");
-    define("PASSWORD","cOntraS3guraaA123.");
-    define("DB","baseProyectoMuyMuy importante");
+    define("DBUSER","");
+    define("DBHOST","");
+    define("PASSWORD","");
+    define("DB","");
 
     function connect()
     {
