@@ -1,0 +1,28 @@
+#Punto 1. Ignorar carpeta Contenido Secreto en templates
+/templates/ContenidoSecreto
+
+#Punto. 2. El archivo config ya que posee información confidencial (Pero necesita que exista una plantilla ya que a veces se le va la onda)
+#Se ignora el php existente.
+dynamics/php/*config.php
+
+#Punto 3. Todos los archivos con extensión pdf dentro de los assets, pero no los que se encuentran en la carpeta docs
+assets/*.pdf 
+
+#Punto 4. Todos los archivos de extensión txt pues no poseen información importante
+**.txt 
+
+
+#Punto. 5.Todas las imágenes a excepción de las esenciales para el sistema (Sabrás cuales no deben eliminarse observando el nombre de los archivos)
+
+**/.jpg
+**/.gif
+**/.png
+**/.webp
+
+!*-system
+
+#Punto 6. Todos los archivos marcados con la bandera -prueba o -local (Por ejemplo: modales-local.js o sesiones-prueba.php) a menos que se marquen como -experimento en cualquier parte del nombre
+*-local
+*-prueba
+
+!*-experimento
